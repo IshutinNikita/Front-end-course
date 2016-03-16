@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Positioning task</title>
+	<style>
+		body {height: 2000px;}
+		ul {list-style: none;}
+		/**/
+		.upper-div {width: 206px; 
+					height: 206px; 
+					border: 3px solid #3593c9; 
+					border-radius: 50%;
+					background: url(portrait.png) no-repeat 0px 28px;
+					position: relative;
+				}
+		.socials-item {position: absolute;}
+		.tw {left: 15px; top: 10px;}
+		.tum {right: 0; bottom: 30px;}
+		.fb {right: 30px; bottom: 0;}
+		.pin {bottom: -20px; left: 50%;}
+		.socials-link {width: 32px; height: 32px; overflow: hidden; display: block;}
+		img {width: 100%; position: relative;}
+		.tw-tum {top: -32px;}
+		.tw-fb {top: -64px;}
+		.tw-pin {top: -96px;}
+		/**/
+		.mid-div {width: 460px; margin: 0 auto; position: relative;}
+		.inner {width: inherit; height: 600px; position: absolute;}
+		.pink {background-color: #d8464c; z-index: 3;}
+		.blue {background-color: blue; left: 5px; top: 5px; z-index: 2;}
+		.light-blue {background-color: lightblue; left: 10px; top: 10px; z-index: 1;}
+		/**/
+		.bot-div {width: 330px; 
+				background: rgba(93,93,93,.8);
+				position: fixed;
+				bottom: 0;
+				right: 0;
+				box-sizing: border-box;
+			}
+		.photo {width: 85px; 
+				height: 85px; 
+				background: #f7e35f; 
+				position: absolute;
+				top: 25px;
+				left: 25px;
+			}
+		.contats-list, .contats-title {padding-left: 135px; color: #fff;}
+	</style>
+</head>
+<body>
+	<div class="upper-div">
+		<ul class="socials">
+			<li class="socials-item tw">
+				<a class="socials-link" href="#">
+					<img class="tw-img" src="logos.png" alt="Twitter">
+				</a>
+			</li>
+			<li class="socials-item tum">
+				<a class="socials-link" href="#">
+					<img class="tw-tum" src="logos.png" alt="Twitter">
+				</a>
+			</li>
+			<li class="socials-item fb">
+				<a class="socials-link" href="#">
+					<img class="tw-fb" src="logos.png" alt="Twitter">
+				</a>
+			</li>
+			<li class="socials-item pin">
+				<a class="socials-link" href="#">
+					<img class="tw-pin" src="logos.png" alt="Twitter">
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="mid-div">
+		<div class="inner pink"></div>
+		<div class="inner blue"></div>
+		<div class="inner light-blue"></div>
+	</div>
+	<div class="bot-div">
+		<div class="photo"></div>
+		<p class="contats-title">Have any questions?</p>
+		<ul class="contats-list">
+			<li class="contats-list__item">Email: epamlab@epam.com</li>
+			<li class="contats-list__item">Phone: +375 12345667</li>
+			<li class="contats-list__item">Contact Person: somebody</li>
+		</ul>
+	</div>
+</body>
+</html>
